@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+
+.logo64Icon,
+.logoipsum {
+  position: relative;
+  flex-shrink: 0;
+}
+.logo64Icon {
+  height: 6rem;
+  width: 7.5rem;
+  overflow: hidden;
+}
+
+.logo64Parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-5xs-7);
+  text-align: left;
+  z-index: 5;
+}
+.benvenutoNel,
+.tuoEventoInterattivo {
+  margin: 0;
+  position: absolute;
+  line-height: 11.875rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  z-index: 5;
+}
+.benvenutoNel {
+  top: 4.756rem;
+  left: 0;
+  right: 0;
+  font-size: var(--font-size-37xl);
+  letter-spacing: 0.22em;
+  font-family: var(--font-bebas-neue);
+  z-index: 5;
+}
+.tuoEventoInterattivo {
+  top: 13.131rem;
+  left: 0;
+  right: 0;
+  font-size: 80px;
+  font-family: var(--font-anton);
+  z-index: 5;
+}
+.frameGroup {
+  align-self: stretch;
+  height: 35.463rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  
+}
+.vectorIcon,
+.vectorIcon1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.vectorIcon1 {
+  z-index: 2;
+}
+.frameIcon,
+.iniziaIcon {
+  position: absolute;
+  top: 1.031rem;
+  left: 3.919rem;
+  width: 2.788rem;
+  height: 1.181rem;
+  z-index: 2;
+}
+.frameIcon {
+  top: 0.875rem;
+  left: 6.956rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: hidden;
+  object-fit: contain;
+}
+.vectorParent {
+  height: 4.063rem;
+  flex: 1;
+  position: relative;
+  transform: scale(1); /* Set the default scale */
+  transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.vectorParent:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+.frameContainer,
+.frameWrapper {
+  width: 12.063rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  z-index: 10;
+  margin: 30vw;
+}
+.frameWrapper {
+  width: 78.688rem;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.frameParent {
+  width: 79.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-42xl-5);
+  max-width: 100%;
+  z-index: 5;
+  pointer-events: none;
+}
+.formContainer {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl) var(--padding-439xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-5xl-5);
+  color: var(--helping);
+  font-family: var(--font-plus-jakarta-sans);
+  z-index: 5;
+}
+@media screen and (max-width: 1200px) {
+  .formContainer {
+    padding-bottom: var(--padding-279xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .benvenutoNel {
+    font-size: var(--font-size-26xl);
+    line-height: 9.5rem;
+  }
+  .tuoEventoInterattivo {
+    font-size: var(--font-size-54xl);
+    line-height: 7.125rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .frameParent {
+    gap: var(--gap-12xl);
+  }
+  .formContainer {
+    padding-bottom: var(--padding-175xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .logoipsum {
+    font-size: var(--font-size-xl);
+    line-height: 1.563rem;
+  }
+  .benvenutoNel {
+    font-size: var(--font-size-15xl);
+    line-height: 7.125rem;
+  }
+  .tuoEventoInterattivo {
+    font-size: var(--font-size-26xl);
+    line-height: 4.75rem;
+  }
+  .frameParent {
+    gap: var(--gap-mini);
+  }
+
+
+.frameContainer {
+  margin-top: 120vw;
+}
+}
+
+
+
+
+
+.formContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* This ensures the section takes up the full viewport height */
+  overflow: hidden;
+  z-index: 0;
+  box-shadow: inset 0px 0px 500px rgb(2, 2, 2); /* Adjust shadow size and color as needed */
+}
+
+.backgroundImageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Ensure the background is behind other content */
+}
+
+.frameParent {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  /* Add any other styles you need for the content */
+}
+
+
+
+@media screen and (max-width: 450px) {
+  .frameGroup {
+    margin-bottom: -50%;
+  }
+
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #7d6f61c2; /* Black with 80% opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100; /* Ensure it appears above everything else */
+  transition: opacity 1s ease-in-out; /* Smooth fade-out */
+}
+
+.overlayContent {
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.getStartedButton {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: transparent;
+  color: #f7dfc5;
+  border: 1px solid #f7dfc5;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.getStartedButton:hover {
+  background-color: #f7dfc5;
+  color: black;
+}
+
+.fadeOut {
+  opacity: 0;
+  pointer-events: none; /* Prevent interaction once it's fading */
+  transition: opacity 1s ease-in-out; /* Smooth fade-out */
+}
+
+
+.artemidetext {
+  color: #f7dfc5;
+  font-family: var(--font-bebas-neue);
+}
+
+.explain {
+
+  color: #f7dfc5;
+  font-family: var(--font-bebas-neue);
+  font-weight: 100;
+}

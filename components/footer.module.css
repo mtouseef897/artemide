@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+
+
+.frameChild {
+  width: 90rem;
+  height: 9.813rem;
+  position: relative;
+  background-color: var(--color-gray-100);
+  display: none;
+  max-width: 100%;
+  padding-top: -10%;
+}
+.logo64Icon,
+.logoipsum {
+  position: relative;
+  flex-shrink: 0;
+}
+.logo64Icon {
+  height: 2.106rem;
+  width: 2.106rem;
+  overflow: hidden;
+  min-height: 2.125rem;
+}
+.logoipsum {
+  letter-spacing: -0.02em;
+  line-height: 1.938rem;
+  display: inline-block;
+  min-width: 7.688rem;
+}
+.footerContent,
+.footerLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.footerLogo {
+  justify-content: flex-start;
+  gap: var(--gap-5xs-7);
+  z-index: 1;
+}
+.footerContent {
+  justify-content: flex-end;
+  padding: 0 var(--padding-24xl) 0 var(--padding-25xl);
+}
+.copyrights2024 {
+  position: relative;
+  font-size: var(--font-size-sm);
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  color: var(--dark-d0);
+  text-align: right;
+  text-shadow: 1px 0 0#121120, 0 1px 0#121120, -1px 0 0#121120, 0-1px 0#121120;
+  z-index: 1;
+}
+.rectangleParent {
+  align-self: stretch;
+  background-color: var(--color-gray-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-22xl-1) var(--padding-xl) var(--padding-5xl);
+  box-sizing: border-box;
+  gap: var(--gap-21xl-2);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-5xl-5);
+  color: var(--helping);
+  font-family: var(--font-plus-jakarta-sans);
+  z-index: 5;
+}
+@media screen and (max-width: 450px) {
+  .logoipsum {
+    font-size: var(--font-size-xl);
+    line-height: 1.563rem;
+  }
+  .footerContent {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .rectangleParent {
+    gap: var(--gap-xl);
+  }
+}

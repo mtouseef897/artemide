@@ -1,0 +1,297 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+
+
+
+    --font-plus-jakarta-sans: "Plus Jakarta Sans";
+  --font-anton: Anton;
+  --font-bebas-neue: "Bebas Neue";
+  --font-size-sm: 0.875rem;
+  --font-size-5xl-5: 1.531rem;
+  --font-size-xl: 1.25rem;
+  --font-size-lg: 1.125rem;
+  --font-size-base: 1rem;
+  --font-size-27xl: 2.875rem;
+  --font-size-9xl: 1.75rem;
+  --font-size-18xl: 2.313rem;
+  --font-size-101xl: 7.5rem;
+  --font-size-11xl: 1.875rem;
+  --font-size-29xl: 3rem;
+  --font-size-3xl: 1.375rem;
+  --font-size-5xl: 1.5rem;
+  --font-size-81xl: 6.25rem;
+  --font-size-31xl: 3.125rem;
+  --font-size-163xl: 11.375rem;
+  --font-size-26xl: 2.813rem;
+  --font-size-54xl: 4.563rem;
+  --font-size-37xl: 3.5rem;
+  --font-size-15xl: 2.125rem;
+
+  /* Colors */
+  --dark-d0: #ffffff;
+  --color-gray-100: #1a120d;
+  --dark: #070808;
+  --color-gray-200: rgba(255, 255, 255, 0.2);
+  --color-gray-300: rgba(255, 255, 255, 0.1);
+  --helping: #f7dfc5;
+  --color-peru: #e69244;
+  --color-chocolate: #db7b22;
+  --color-darkgray: #b2b2b2;
+  --color-darkslategray: #404141;
+  --foundation-dark-d200: #717079;
+  --dark-d200: #6a6b6b;
+  --color-blanchedalmond: rgba(255, 233, 207, 0.95);
+
+  /* Gaps */
+  --gap-mid: 1.062rem;
+  --gap-21xl-2: 2.512rem;
+  --gap-xl: 1.25rem;
+  --gap-5xs-7: 0.481rem;
+  --gap-xs: 0.75rem;
+  --gap-9xs: 0.25rem;
+  --gap-3xs: 0.625rem;
+  --gap-base: 1rem;
+  --gap-2xl: 1.312rem;
+  --gap-2xs: 0.687rem;
+  --gap-31xl-4: 3.15rem;
+  --gap-6xl: 1.562rem;
+  --gap-10xl: 1.812rem;
+  --gap-lg: 1.125rem;
+  --gap-5xs: 0.5rem;
+  --gap-42xl-5: 3.843rem;
+  --gap-mini: 0.937rem;
+  --gap-12xl: 1.937rem;
+
+  /* Paddings */
+  --padding-22xl-1: 2.568rem;
+  --padding-xl: 1.25rem;
+  --padding-5xl: 1.5rem;
+  --padding-24xl: 2.687rem;
+  --padding-25xl: 2.75rem;
+  --padding-2xl: 1.312rem;
+  --padding-8xl-5: 1.718rem;
+  --padding-11xl: 1.875rem;
+  --padding-15xl-5: 2.156rem;
+  --padding-3xl: 1.375rem;
+  --padding-3xs: 0.625rem;
+  --padding-mini: 0.937rem;
+  --padding-base: 1rem;
+  --padding-11xs-5: 0.093rem;
+  --padding-7xs: 0.375rem;
+  --padding-lg: 1.125rem;
+  --padding-smi: 0.812rem;
+  --padding-47xl: 4.125rem;
+  --padding-9xs: 0.25rem;
+  --padding-527xl: 34.125rem;
+  --padding-336xl: 22.187rem;
+  --padding-82xl: 6.312rem;
+  --padding-32xl: 3.187rem;
+  --padding-42xl: 3.812rem;
+  --padding-43xl: 3.875rem;
+  --padding-932xl: 59.437rem;
+  --padding-599xl: 38.625rem;
+  --padding-242xl: 16.312rem;
+  --padding-383xl: 25.125rem;
+  --padding-17xl: 2.25rem;
+  --padding-16xl: 2.187rem;
+  --padding-50xl: 4.312rem;
+  --padding-52xl: 4.437rem;
+  --padding-87xl: 6.625rem;
+  --padding-54xl: 4.562rem;
+  --padding-26xl: 2.812rem;
+  --padding-11xs: 0.125rem;
+  --padding-sm: 0.875rem;
+  --padding-49xl: 4.25rem;
+  --padding-mid: 1.062rem;
+  --padding-6xl: 1.562rem;
+  --padding-9xs-3: 0.206rem;
+  --padding-lgi: 1.187rem;
+  --padding-7xs-5: 0.343rem;
+  --padding-11xs-1: 0.068rem;
+  --padding-439xl: 28.625rem;
+  --padding-279xl: 18.625rem;
+  --padding-175xl: 12.125rem;
+
+  /* Border radiuses */
+  --br-3xs: 10px;
+  --br-xs: 12px;
+  --br-5xs: 8px;
+  --br-11xs: 2px;
+  --br-smi: 13px;
+  --br-41xl: 60px;
+
+  --foreground-rgb: 255,255,255;
+  --background-rgb: 0, 0, 0;
+  --primary-color: #E69244;
+--secondary-color: #222323;
+--highlight-color: #f5f5f5;
+
+--slider-length: 400px;
+--slider-length-mobile: 300px;
+--ball-size: 25px;
+}
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+*::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+
+
+.double-range-slider-container {
+    position: relative;
+    font-size: 16px;
+    color: #fff;
+    width: var(--slider-length);
+    height: 100%;
+   
+    margin: 66px 20px 66px 20px !important;
+}
+
+.double-range-slider-rail {
+    background-color: var(--secondary-color) !important;
+    width: var(--slider-length);
+    height: 10px;
+    border-radius: 50px;
+    z-index: 0;
+}
+
+.double-range-slider-track {
+    background-color: var(--primary-color) !important ;
+    width: var(--slider-length);
+    height: 10px;
+    border-radius: 50px;
+    position: absolute;
+    top: 0px;
+}
+
+.double-range-slider-ball {
+    background-color: var(--highlight-color);
+    outline: var(--primary-color) 5px solid !important;
+    z-index: 2;
+    width: var(--ball-size);
+    height: var(--ball-size);
+    border-radius:50%;
+    position: absolute;
+    top: (-5px * calc((var(--ball-size) - 10px) / 10px));
+    cursor: pointer;
+}
+
+.double-range-slider-active {
+    z-index: 4;
+}
+
+.double-range-slider-tooltip {
+    background-color: var(--primary-color) !important;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: auto;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px !important;
+    padding: 15px 20px;
+    flex-wrap: nowrap;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Position the tooltip */
+
+.double-range-slider-ball {
+    .double-range-slider-tooltip {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.double-range-slider-over {
+    bottom: calc(var(--ball-size) / 2) + 35px;
+}
+.double-range-slider-under {
+    top: calc(var(--ball-size) / 2) + 35px;
+}
+
+.double-range-slider-mid {
+    bottom: calc(var(--ball-size) / 2) + 25px;
+}
+
+.double-range-slider-over::after {
+    border-color: var(--primary-color) transparent transparent transparent !important;
+    top: 100%; /* At the bottom of the tooltip */
+}
+.double-range-slider-under::after {
+    border-color: transparent transparent var(--primary-color) transparent !important;
+    bottom: 100%; /* At the top of the tooltip */
+}
+
+.double-range-slider-tooltip::after {
+    content: " ";
+    position: absolute;
+    margin-left: var(--after-margin-left, -10px);
+    border-width: 10px;
+    border-style: solid;
+    pointer-events: none;
+    left: var(--after-left, 50%);
+}
+
+.double-range-slider-text-holder {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+    white-space: nowrap;
+}
+
+.double-range-slider-step {
+    position: absolute;
+    z-index: 1;
+    height: 10px;
+    width: 5px;
+    border-radius: 30px;
+    background-color: var(--highlight-color);
+}
+
+/* Style the calendar picker indicator */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url('/date.png') no-repeat center center ;
+  background-size: contain; /* Adjust the size as needed */
+  border: none; /* Remove default border if necessary */
+  width: 16px; /* Adjust width if necessary */
+  height: 16px; /* Adjust height if necessary */
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+    .double-range-slider-container {
+      width: var(--slider-length-mobile) !important;
+    }
+    .double-range-slider-rail {
+      width: var(--slider-length-mobile) !important;
+    }
+  }
+
+
+
+  .object-cover {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    border-radius: 10px;
+
+  }
